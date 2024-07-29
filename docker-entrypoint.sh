@@ -22,6 +22,7 @@ sed -i "s/DB_PASSWORD=.*/DB_PASSWORD=${DB_PASSWORD}/" .env
 # 生成應用程序密鑰
 php artisan key:generate
 
+php artisan waterhole:install
 # 運行數據庫遷移
 php artisan migrate --force
 
